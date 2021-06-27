@@ -28,13 +28,13 @@ pipeline {
 		
 		stage('Stop Tomcat') {
             steps {
-                bat 'cd D:\Tomcat\apache-tomcat-9.0.46-windows-x64\apache-tomcat-9.0.46\bin'
+                bat 'cd D:/Tomcat/apache-tomcat-9.0.46-windows-x64/apache-tomcat-9.0.46/bin'
 				bat 'shutdown.bat'
             }
         }
 		stage('Start Tomcat') {
             steps {
-                bat 'cd D:\Tomcat\apache-tomcat-9.0.46-windows-x64\apache-tomcat-9.0.46\bin'
+                bat 'cd D:/Tomcat/apache-tomcat-9.0.46-windows-x64/apache-tomcat-9.0.46/bin'
 				bat 'start.bat'
             }
         }
